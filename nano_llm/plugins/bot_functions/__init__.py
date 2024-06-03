@@ -160,7 +160,8 @@ class BotFunctions:
                     epilogue = ''
                     
         if style == 'python':          
-            docs = '\n'.join(['* ' + x.docs for x in functions if x.style == 'python'])
+            # docs = '\n'.join(['* ' + x.docs for x in functions if x.style == 'python'])
+            docs = '\n'.join(['* ' + (x.docs if isinstance(x.docs, str) else str(x.docs)) for x in cls.functions if x.enabled])
         elif style == 'openai':
             docs = str([x.docs for x in functions if x.style == 'openai']) #str([convert_to_openai_tool(x.function) for x in cls.functions if x.enabled])
             
