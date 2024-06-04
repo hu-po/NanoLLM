@@ -4,7 +4,7 @@ from nano_llm.utils import ArgParser, print_table
 
 from nano_llm.plugins import (
     UserPrompt, ChatQuery, PrintStream, 
-    AutoASR, AutoTTS, VADFilter, RateLimit,
+    AutoASR, AutoTTS, RateLimit,
     ProcessProxy, AudioOutputDevice, AudioOutputFile
 )
 

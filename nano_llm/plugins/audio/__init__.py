@@ -5,4 +5,4 @@ from .audio_output import AudioOutputDevice, AudioOutputFile
 from .auto_asr import AutoASR
 from .auto_tts import AutoTTS
 
-from .vad_filter import VADFilter
+# from .vad_filter import VADFilter
