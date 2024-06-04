@@ -201,8 +201,8 @@ class WebChat(VoiceChat):
             
         system_prompt = [instruct]
         
-        #if enable_autodoc and self.llm.functions:
-        #    system_prompt.append("\n" + BotFunctions.generate_docs())
+        if enable_autodoc and self.llm.functions:
+           system_prompt.append("\n" + BotFunctions.generate_docs())
             
         if enable_profile and self.user_profile:
             system_prompt.append(
