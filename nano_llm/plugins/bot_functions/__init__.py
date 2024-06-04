@@ -319,11 +319,12 @@ class BotFunctions:
             return True
             
         # TODO: automate this
-        from . import clock
-        from . import location
-        from . import weather
-        from . import home_assistant
-        
+        # from . import clock
+        # from . import location
+        # from . import weather
+        # from . import home_assistant
+        from . import stompy
+
         assert(cls.functions)
         cls.builtins = True
         
